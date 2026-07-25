@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Arauto — Carcosa</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="dots">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+        </div>
+        <div class="url-bar">
+            o-arauto.net/arquivo/outubro
+            <span class="cursor-blink"></span>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">☀️</button>
+    </div>
+
+    <header class="site-header">
+        <div class="site-tag">arquivo pessoal - literatura comparada</div>
+        <h1 class="site-name">O Arauto</h1>
+        <div class="site-sub">
+            <span>AINDA NÃO ACABOU, APERTE NO PORTAL DE CARCOSA!</span>
+            <span>|</span>
+            <span class="blink">■</span>
+            <span id="visitantes">1 visitante ativo</span>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <span class="nav-item"><a href="index.html" style="text-decoration:none;color:inherit;">postagens</a></span>
+        <span class="nav-item">sobre</span>
+        <span class="nav-item">arquivo</span>
+        <span class="nav-item">contato</span>
+    </nav>
+
+    <div class="layout">
+        <main class="feed">
+            
+            <!-- ===== POST 4 – RESUMO ===== -->
+            <article class="post">
+                <div class="post-meta">
+                    <span>7 de outubro</span>
+                    <span class="post-tag warn">investigação</span>
+                </div>
+                <h2 class="post-title">Os que vieram antes</h2>
+                <p class="post-body">
+                    Passei o dia em fóruns abandonados e arquivos digitalizados. Encontrei três coisas: um mapa do século XIV com o nome "Carcosa", sem origem documentada; o diário de um explorador do século XVIII que descrevia a mesma figura em três culturas diferentes; e registros de desaparecimentos – um em 1895, outro em 1932, outro em 1971. Todos os que encontraram o padrão sumiram. A última frase de um deles foi: *"Eles não estão descrevendo um símbolo. Eles estão descrevendo alguém."*
+                </p>
+                <span class="post-more"><a href="post4.html">Continuar lendo →</a></span>
+            </article>
+
+
+            <!-- ===== POST 5 – RESUMO ===== -->
+            <article class="post">
+                <div class="post-meta">
+                    <span>8 de outubro</span>
+                    <span class="post-tag warn">pessoal</span>
+                </div>
+                <h2 class="post-title">Amarelo</h2>
+                <p class="post-body">
+                    Sonhei com um lago de água parada, uma cidade de torres inclinadas e uma figura de véus amarelos. Quando acordei, o mundo lá fora também estava amarelo – o balde do faxineiro, o guarda-chuva de um homem imóvel, um papel em branco no para-brisa de um carro. E então, revisando a foto da caverna, encontrei coordenadas escondidas: 48°36'00.0"N 117°20'00.0"W. Um lago chamado Hali. No painel do blog, um visitante chamado "observer" havia estado aqui antes de cada postagem que fiz. Antes de eu saber o que ia escrever.
+                </p>
+                <span class="post-more"><a href="post5.html">Continuar lendo →</a></span>
+            </article>
+
+            <!-- ===== POST 6 – CORROMPIDO (RESUMO) ===== -->
+            <div class="post-06" style="margin-top: 28px;">
+                <div class="p06-tag">postagem 06 — data: — — autor: —</div>
+                <div class="corrupt" style="font-size: 10px; color: #4a3a2a;">
+                     ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ
+                </div>
+                <div class="final-line" style="font-size: 13px; color: #6a4e18;">
+                    Obrigado por terminar a busca.
+                </div>
+                <div style="margin-top: 12px; font-family: 'Share Tech Mono', monospace; font-size: 11px; color: #4a3e1e;">
+                    <a href="post6.html" style="color: #7a6e50; text-decoration: none; border-bottom: 1px dashed #4a4030;">
+                        → acessar postagem corrompida
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <aside class="sidebar" style="padding:16px 14px; font-size:10px;">
+            <h3 style="font-size:13px; margin-bottom:8px;">Arquivos</h3>
+            <div class="side-item" style="padding:4px 0; font-size:10px;">
+                <span>Arquivos corrompidos</span>
+                <span class="value glitch-text" style="font-size:11px;">03</span>
+            </div>
+            <div class="side-item" style="padding:4px 0; font-size:10px;">
+                <span>Último acesso</span>
+                <span class="value" id="lastAccess" style="font-size:11px;">—</span>
+            </div>
+            <div class="side-item" style="padding:4px 0; font-size:10px; border-bottom:0.5px solid #1a1812;">
+                <span>Visitantes</span>
+                <span class="value" id="visitorCount" style="font-size:11px;">1</span>
+            </div>
+            <div class="side-item" style="padding:4px 0; font-size:10px; border-bottom:none; margin-top:2px;">
+                <a href="portal.html" style="color: #6a5a3a; text-decoration: none; border-bottom: 1px dashed #4a4030;">
+                    Portal de Carcosa
+                </a>
+                <span style="font-size:12px; color:#6a4a2a;">⬤</span>
+            </div>
+            <p style="margin:10px 0 0; font-size:9px; color:#3a3428; border-top:0.5px solid #1a1610; padding-top:8px;">
+                <span class="glitch-text">⚠</span> sinal fraco
+            </p>
+        </aside>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
