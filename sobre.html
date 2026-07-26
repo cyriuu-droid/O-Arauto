@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Arauto — Sobre</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="dots">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+        </div>
+        <div class="url-bar">
+            o-arauto.net/sobre
+            <span class="cursor-blink"></span>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">☀️</button>
+    </div>
+
+    <header class="site-header">
+        <div class="site-tag">arquivo pessoal — literatura comparada</div>
+        <h1 class="site-name">O Arauto</h1>
+        <div class="site-sub">
+            <span>Última atualização: outubro</span>
+            <span>|</span>
+            <span class="blink">■</span>
+            <span id="visitantes">1 visitante ativo</span>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <span class="nav-item"><a href="index.html" style="text-decoration:none;color:inherit;">postagens</a></span>
+        <span class="nav-item active"><a href="sobre.html" style="text-decoration:none;color:inherit;">sobre</a></span>
+        <span class="nav-item">arquivo</span>
+        <span class="nav-item">contato</span>
+    </nav>
+
+    <div class="layout">
+        <main class="feed">
+
+            <article class="post">
+                <div class="post-meta">
+                    <span>—</span>
+                    <span class="post-tag">sobre</span>
+                </div>
+                <h2 class="post-title">O que é O Arauto?</h2>
+
+                <p class="post-body">
+                    Este blog nasceu como um diário de campo pessoal, um registro das minhas viagens e pesquisas sobre mitologias comparadas. Ao longo dos anos, ele se tornou mais do que isso.
+                </p>
+                <p class="post-body">
+                    Aqui eu documento descobertas, padrões, coincidências que não deveriam existir. Figuras entronizadas, véus, ausência de rostos — elementos que aparecem em culturas separadas por oceanos e séculos, sem nenhum contato documentado entre si.
+                </p>
+                <p class="post-body">
+                    O que começou como uma investigação acadêmica se transformou em algo que eu não esperava. Uma busca por respostas que me levou a lugares que não estão em mapas, a palavras que não existem em dicionários, a uma verdade que talvez nunca deveria ter sido encontrada.
+                </p>
+                <p class="post-body">
+                    Escrevo para entender. Escrevo para não esquecer. Escrevo porque, se eu não escrever, ninguém vai saber que essas coisas existem.
+                </p>
+                <p class="post-body">
+                    Este blog é o único registro de tudo o que vi. Pode ser que você leia isso e ache que é ficção. Pode ser que você leia e sinta o mesmo arrepio que eu senti. Pode ser que você leia e, como eu, não consiga mais parar de procurar.
+                </p>
+                <p class="post-body" style="font-style: italic; color: #b0a080;">
+                    O véu é mais fino do que parece. E às vezes, ele se rasga.
+                </p>
+
+                <!-- ===== FRASE FINAL COM CLIQUE ===== -->
+                <p class="post-body" style="color: #6a4a2a; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; font-weight: bold;" onclick="exibirAviso()">
+                    Este arquivo é monitorado por entidades não listadas em nenhum registro público.
+                </p>
+
+                <span class="post-more" style="margin-top: 20px; display: block;">
+                    <a href="index.html" style="color: #5a5040; text-decoration: none; border-bottom: 1px dashed #3a3428;">
+                        ← voltar ao início
+                    </a>
+                </span>
+            </article>
+
+        </main>
+
+        <aside class="sidebar" style="padding:16px 14px; font-size:10px;">
+            <h3 style="font-size:13px; margin-bottom:8px;">Arquivos</h3>
+            <div class="side-item" style="padding:4px 0; font-size:10px;">
+                <span>Arquivos corrompidos</span>
+                <span class="value glitch-text" style="font-size:11px;">03</span>
+            </div>
+            <div class="side-item" style="padding:4px 0; font-size:10px;">
+                <span>Último acesso</span>
+                <span class="value" id="lastAccess" style="font-size:11px;">—</span>
+            </div>
+            <div class="side-item" style="padding:4px 0; font-size:10px; border-bottom:0.5px solid #1a1812;">
+                <span>Visitantes</span>
+                <span class="value" id="visitorCount" style="font-size:11px;">1</span>
+            </div>
+            <div class="side-item" style="padding:4px 0; font-size:10px; border-bottom:none; margin-top:2px;">
+                <span style="color:#6a5a3a;">Portal de Carcosa</span>
+                <span style="font-size:12px; color:#6a4a2a;">⬤</span>
+            </div>
+            <p style="margin:10px 0 0; font-size:9px; color:#3a3428; border-top:0.5px solid #1a1610; padding-top:8px;">
+                <span class="glitch-text">⚠</span> sinal fraco
+            </p>
+        </aside>
+    </div>
+
+    <script src="script.js" defer></script>
+
+    <script>
+        function exibirAviso() {
+            const aviso = "The domain of this site is restricted to the employees of the intelligent force of the United States. The matters here are private and confidential to the employees with the highest level of trust. Any illegal trespassing is a crime to the government of the United States of America country.";
+
+            // Exibe em um alerta estilizado (ou pode ser um modal)
+            alert(aviso);
+
+            // Opcional: também escrever no console
+            console.log(aviso);
+
+            // Efeito visual: a frase pisca rapidamente
+            const el = document.querySelector('.post-body[onclick="exibirAviso()"]');
+            if (el) {
+                el.style.color = '#d4c090';
+                setTimeout(() => {
+                    el.style.color = '#6a4a2a';
+                }, 500);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Professor: Blog pessoal</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- top bar -->
+    <div class="top-bar">
+        <div class="dots">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+        </div>
+        <div class="url-bar">
+            o-arauto.net/arquivo/outubro
+            <span class="cursor-blink"></span>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">☀️</button>
+    </div>
+     
+    <!-- header -->
+    <header class="site-header">
+        <div class="site-tag">arquivo pessoal: banco de literaturas</div>
+        <h1 class="site-name">O Professor: Blog pessoal</h1>
+        <div class="site-sub">
+            <span>Última atualização: outubro</span>
+            <span>|</span>
+            <span class="blink">■</span>
+            <span id="visitantes">1 visitante ativo</span>
+        </div>
+    </header>
+
+    <!-- nav--> 
+    <nav class="nav">
+        <span class="nav-item active">postagens</span>
+        <span class="nav-item"><a href="sobre.html" style="text-decoration:none;color:inherit;">sobre</a></span>
+        <span class="nav-item">arquivo</span>
+        <span class="nav-item">contato</span>
+    </nav>
+
+    <!-- layout -->
+    <div class="layout">
+        <main class="feed">
+
+            <!-- POST 1 -->
+            <article class="post">
+                <div class="post-meta">
+                    <span>3 de outubro</span>
+                    <span class="post-tag">diário de campo</span>
+                </div>
+                <h2 class="post-title">Chegada - primeiras impressões do Cairo</h2>
+                <p class="post-body">
+                    Cheguei ao Cairo ontem à noite. Escrevo isso sentado numa cadeira de plástico barata no quarto do hotel, com o ventilador girando devagar no teto. Quatorze anos estudando mitologias antigas e essa é minha primeira viagem ao Egito de verdade — não para conferências, não para museus climatizados. Para poeira. Para campo...
+                </p>
+                <span class="post-more"><a href="post1.html">Continuar lendo →</a></span>
+            </article>
+
+            <!-- POST 2 -->
+            <article class="post">
+                <div class="post-meta">
+                    <span>5 de outubro</span>
+                    <span class="post-tag">descoberta</span>
+                </div>
+                <h2 class="post-title">Uma caverna fora dos mapas</h2>
+                <p class="post-body">
+                    Estava caminhando pela manhã quando o chão mudou debaixo dos meus pés. Pedra. Lisa demais para ser natural. As paredes estavam cobertas de figuras com proporções que não fazem sentido. No centro, um trono. Tirei quarenta e três fotos. Quarenta e duas estavam corrompidas.
+                </p>
+                <div class="post-code">
+                    arquivo: DSC_0041.jpg<br>
+                    câmera: Canon EOS R5<br>
+                    <span class="code-dim">data de criação: 12/10/1895</span><br>
+                    tamanho: 4,2 MB<br>
+                    <span class="code-dim">coordenadas: 0°00'00"N 0°00'00"E</span>
+                </div>
+                <span class="invisible">Q0FSQ09TQQ==</span>
+                <span class="post-more"><a href="post2.html">Continuar lendo →</a></span>
+            </article>
+
+            <!-- POST 3 -->
+            <article class="post">
+                <div class="post-meta">
+                    <span>7 de outubro</span>
+                    <span class="post-tag warn">pesquisa</span>
+                </div>
+                <h2 class="post-title">Padrões entre civilizações sem contato documentado</h2>
+                <p class="post-body">
+                    Encontrei três referências independentes à mesma figura: um rei entronizado, véus, ausência de rosto. Culturas que nunca se conheceram descrevendo a mesma coisa. Um estudante desaparecido em 1971 escreveu: <em>"eles não estão descrevendo um símbolo. Eles estão descrevendo alguém."</em>
+                </p>
+                <div class="post-inserted">Encontre a chave.</div>
+                <div class="post-note">nota: esta postagem foi editada às 23h03. o texto original continha uma seção adicional que não consigo mais localizar.</div>
+                <span class="post-more"><a href="post3.html">Continuar lendo →</a></span>
+            </article>
+
+            <!-- POST 6 (corrompido) -->
+            <div class="post-06">
+                <div class="p06-tag">postagem 06 — data: — — autor: —</div>
+                <div class="corrupt">ÿØÿà▒▒▒▒░░▒▒█▒▒░░░▒▒▒CARCOSA▒▒▒░░▒▒▒▒▒░░░▒▒▒▒▒▒▒░░▒▒▒▒▒▒▒░░░▒▒▒▒</div>
+                <div class="final-line">Obrigado por terminar a busca.</div>
+                <div class="coords" id="coords">[ coordenadas: 48°36′00.0″N 117°20′00.0″W ]</div>
+            </div>
+
+        </main>
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar" style="padding:16px 14px; font-size:10px;">
+    <h3 style="font-size:13px; margin-bottom:8px;">Arquivos</h3>
+    <div class="side-item" style="padding:4px 0; font-size:10px;">
+        <span>Arquivos corrompidos</span>
+        <span class="value glitch-text" style="font-size:11px;">03</span>
+    </div>
+    <div class="side-item" style="padding:4px 0; font-size:10px;">
+        <span>Último acesso</span>
+        <span class="value" id="lastAccess" style="font-size:11px;">—</span>
+    </div>
+    <div class="side-item" style="padding:4px 0; font-size:10px; border-bottom:0.5px solid #1a1812;">
+        <span>Visitantes</span>
+        <span class="value" id="visitorCount" style="font-size:11px;">1</span>
+    </div>
+    <div class="side-item" style="padding:4px 0; font-size:10px; border-bottom:none; margin-top:2px;">
+        <span style="color:#6a5a3a;">Eco de Carcosa</span>
+        <span style="font-size:12px; color:#6a4a2a;">⬤</span>
+    </div>
+    <p style="margin:10px 0 0; font-size:9px; color:#3a3428; border-top:0.5px solid #1a1610; padding-top:8px;">
+        <span class="glitch-text">⚠</span> sinal fraco
+    </p>
+</aside>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

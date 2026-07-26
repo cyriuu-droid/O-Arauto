@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Arauto — Chegada</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        <div class="dots">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+        </div>
+        <div class="url-bar">
+            o-arauto.net/arquivo/outubro
+            <span class="cursor-blink"></span>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">☀️</button>
+    </div>
+    
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <div class="site-tag">arquivo pessoal - literatura comparada</div>
+        <h1 class="site-name">O Arauto</h1>
+        <div class="site-sub">
+            <span>Última atualização: outubro</span>
+            <span>|</span>
+            <span class="blink">■</span>
+            <span id="visitantes">? visitantes ativos</span>
+        </div>
+    </header>
+
+    <!-- ===== NAV ===== -->
+    <nav class="nav">
+        <span class="nav-item"><a href="index.html" style="text-decoration:none;color:inherit;">postagens</a></span>
+        <span class="nav-item"><a href="sobre.html" style="text-decoration:none;color:inherit;">sobre</a></span>
+        <span class="nav-item">arquivo</span>
+        <span class="nav-item">contato</span>
+    </nav>
+
+    <!-- ===== LAYOUT ===== -->
+    <div class="layout">
+        <main class="feed">
+
+            <!-- POSTAGEM 01 -->
+            <article class="post">
+                <div class="post-meta">
+                    <span>3 de outubro</span>
+                    <span class="post-tag">diário de campo</span>
+                </div>
+                <h2 class="post-title">Chegada — primeiras impressões do Cairo</h2>
+                <p class="post-body">
+                    Cheguei ao Cairo ontem à noite. Escrevo isso sentado numa cadeira de plástico barata no quarto do hotel, com o ventilador girando devagar no teto e o barulho da cidade lá fora – buzinas, vozes, o cheiro de algo frito que sobe pela janela aberta.
+                </p>
+                <p class="post-body">
+                    Não é glamoroso. Nunca é glamoroso. Qualquer pessoa que romantize trabalho de campo nunca ficou três horas num táxi sem ar‑condicionado tentando explicar o nome do hotel para um motorista que não fala inglês.
+                </p>
+                <p class="post-body">
+                    Mas aqui estou eu. Quatorze anos estudando mitologias antigas e essa é minha primeira viagem ao Egito de verdade – não para conferências, não para museus climatizados com crachás e coquetéis. Para campo. Para poeira. Para entender o que os textos não conseguem transmitir.
+                </p>
+                <p class="post-body">
+                    Existe uma diferença entre ler sobre um lugar e respirar o ar dele. Os textos descrevem, catalogam, analisam – mas não cheiram. Não pesam. Não fazem o chão mudar debaixo dos seus pés.
+                </p>
+                <p class="post-body">
+                    O objetivo desta viagem é simples: comparar os registros iconográficos de divindades ctônicas egípcias com os equivalentes mesopotâmicos que tenho estudado nos últimos dois anos. Existe um padrão de representação que não deveria existir. Figuras entronizadas. Véus cobrindo o rosto ou o corpo inteiro. Uma ausência deliberada de traços – não porque o artista não soubesse desenhar rostos, mas porque a ausência parecia ser a escolha.
+                </p>
+                <p class="post-body">
+                    Esse conjunto de elementos aparece no Egito, na Mesopotâmia, em culturas separadas por desertos, por oceanos, por séculos inteiros de silêncio entre si. Povos que nunca comerciaram. Que nunca guerrearam. Que, pelo que todo registro histórico nos diz, nunca souberam da existência um do outro. E mesmo assim: o mesmo rei. O mesmo trono. O mesmo rosto que não está lá.
+                </p>
+                <p class="post-body">
+                    Quero entender por quê.
+                </p>
+                <p class="post-body">
+                    Mas, isso é assunto para amanhã. Por enquanto, preciso me contentar com: uma cama, um ventilador, e o barulho da rua.
+                </p>
+                <p class="post-body">
+                    Boa noite.
+                </p>
+                <span class="post-more"><a href="index.html">← voltar ao arquivo</a></span>
+            </article>
+
+        </main>
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar" style="padding:16px 14px; font-size:10px;">
+    <h3 style="font-size:13px; margin-bottom:8px;">Arquivos</h3>
+    <div class="side-item" style="padding:4px 0; font-size:10px;">
+        <span>Arquivos corrompidos</span>
+        <span class="value glitch-text" style="font-size:11px;">03</span>
+    </div>
+    <div class="side-item" style="padding:4px 0; font-size:10px;">
+        <span>Último acesso</span>
+        <span class="value" id="lastAccess" style="font-size:11px;">—</span>
+    </div>
+    <div class="side-item" style="padding:4px 0; font-size:10px; border-bottom:0.5px solid #1a1812;">
+        <span>Visitantes</span>
+        <span class="value" id="visitorCount" style="font-size:11px;">1</span>
+    </div>
+    <div class="side-item" style="padding:4px 0; font-size:10px; border-bottom:none; margin-top:2px;">
+        <span style="color:#6a5a3a;">Eco de Carcosa</span>
+        <span style="font-size:12px; color:#6a4a2a;">⬤</span>
+    </div>
+    <p style="margin:10px 0 0; font-size:9px; color:#3a3428; border-top:0.5px solid #1a1610; padding-top:8px;">
+        <span class="glitch-text">⚠</span> sinal fraco
+    </p>
+</aside>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
