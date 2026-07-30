@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo Pembroke — Anotações de 1895</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1a1712;
+            color: #c4b8a2;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            max-width: 820px;
+            width: 100%;
+            background: #231f1a;
+            border: 1px solid #3a3428;
+            border-radius: 8px;
+            padding: 48px 56px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            position: relative;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" stitchTiles="stitch"/></filter><rect width="200" height="200" filter="url(%23n)" opacity="0.04"/></svg>');
+            pointer-events: none;
+            border-radius: 8px;
+            opacity: 0.3;
+        }
+
+        .header-arquivo {
+            border-bottom: 1px solid #3a3428;
+            padding-bottom: 18px;
+            margin-bottom: 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .header-arquivo h1 {
+            font-family: 'Georgia', serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #c4a86a;
+            letter-spacing: 0.04em;
+            margin: 0;
+        }
+
+        .header-arquivo .sub {
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            color: #6a5f4a;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        .header-arquivo .sub span {
+            color: #4a3f2a;
+        }
+
+        .header-arquivo .meta {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #6a5f4a;
+        }
+
+        .nota {
+            background: #2a241d;
+            border-left: 3px solid #8a7a4a;
+            padding: 16px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #b0a080;
+            font-size: 14px;
+        }
+
+        .nota strong {
+            color: #c4a86a;
+            font-style: normal;
+        }
+
+        .data {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #6a5f4a;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .corpo-texto p {
+            margin-bottom: 18px;
+            text-align: justify;
+            font-size: 15px;
+            color: #c4b8a2;
+        }
+
+        .corpo-texto p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .divider {
+            border: 0;
+            border-top: 1px solid #3a3428;
+            margin: 32px 0 28px;
+        }
+
+        .final-assinatura {
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            color: #a09070;
+            text-align: right;
+            font-size: 16px;
+            margin-top: 28px;
+            border-top: 1px solid #2a241d;
+            padding-top: 20px;
+        }
+
+        .final-assinatura span {
+            display: block;
+            font-size: 13px;
+            color: #6a5f4a;
+            font-style: normal;
+        }
+
+        .aviso-final {
+            background: #1a1612;
+            border: 0.5px solid #3a3428;
+            padding: 18px 22px;
+            margin-top: 32px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #6a5f4a;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        .aviso-final strong {
+            color: #8a7a4a;
+            font-weight: normal;
+        }
+
+        .link-voltar {
+            display: inline-block;
+            margin-top: 24px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #6a5f4a;
+            text-decoration: none;
+            border-bottom: 1px dashed #3a3428;
+            padding-bottom: 2px;
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        .link-voltar:hover {
+            color: #c4a86a;
+            border-color: #c4a86a;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 28px 20px;
+            }
+            .header-arquivo {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    
+    <div class="header-arquivo">
+        <div>
+            <h1>Arquivo Pembroke</h1>
+            <div class="sub">— anotações de bordo — <span>•</span> expedição ao Egito</div>
+        </div>
+        <div class="meta">código: AP-1895-04</div>
+    </div>
+
+    
+    <span class="data">12 de outubro de 1895. local: Egito.</span>
+
+    
+    <div class="corpo-texto">
+
+        <p>
+            Faz cinco dias que deixei o acampamento base. Os guias locais recusaram-se a me acompanhar depois que mencionei as formações rochosas que havia avistado ao sul. Disseram que aquela região era "marcada" e que "os viajantes que entram não voltam do mesmo jeito". Atribuí ao medo supersticioso, comum entre os habitantes da região.
+        </p>
+
+        <p>
+            Hoje, pela manhã, encontrei a entrada. Não é uma caverna no sentido usual, parece uma ferida na rocha, como se a pedra tivesse sido removida com precisão cirúrgica. As bordas são polidas, quase vítreas. Não há marcas de ferramentas. Fiquei observando por quase uma hora antes de decidir entrar.
+        </p>
+
+        <p>
+            O interior é maior do que aparenta. O ar é fresco, quase frio — algo incomum para o deserto. As paredes são cobertas por figuras. Humanoides, mas com proporções que desafiam a anatomia: braços longos demais, troncos estreitos, cabeças pequenas. Todas ajoelhadas, todas voltadas para o centro. No centro da cavidade, há um trono. Feito de um metal que não consigo identificar. Não é ouro, nem bronze, nem ferro. Reluz como água parada. Não há ninguém sentado nele. Mas a impressão de que há alguém é quase física.
+        </p>
+
+        <div class="nota">
+            <strong>Nota do explorador:</strong> Registro aqui, para o caso de estas anotações serem encontradas, que não ouvi nenhum som durante todo o tempo em que estive na caverna. Nem o vento. Nem meus próprios passos. O silêncio era tão absoluto que podia ouvir o sangue correndo em minhas veias.
+        </div>
+
+        <p>
+            Fotografei as paredes com a câmera portátil. Quando revelei as chapas, no entanto, todas estavam vazias.. exceto uma, onde a silhueta do trono apareceu, mas distorcida, como se algo tivesse se movido durante a exposição. Não me lembro de ter visto movimento algum.
+        </p>
+
+        <p>
+            Encontrei um livro. Encadernado em couro escuro, sem título. As páginas estão vazias, com exceção da última, onde há uma frase em latim que não consegui traduzir completamente: <em>"Non invenis Regem. Rex invenit te."</em>
+        </p>
+
+        <p>
+            Decidi registrar estas coordenadas — 0°00'00" N 0°00'00" E — que encontrei gravadas na base do trono. Sei que não fazem sentido geográfico. Talvez sejam um código. Talvez sejam um aviso.
+        </p>
+
+        <p>
+            Não sei se voltarei a escrever. Há algo aqui que não deveria ser visto. Algo que já sabe que eu estou aqui. Se estas anotações forem encontradas, peço a quem as ler que não procure o que encontrei. Algumas coisas não pedem para serem descobertas — apenas para serem esquecidas.
+        </p>
+
+        <div class="nota" style="border-left-color: #6a3a1a;">
+            <strong>Última entrada — 14 de outubro de 1895:</strong> O trono continua vazio, mas não me sinto mais sozinho. Acho que finalmente entendi o significado do latim... não procurem por Ele, Ele odeia ser incomodado.
+        </div>
+
+    </div>
+
+    <hr class="divider">
+
+    
+    <div class="final-assinatura">
+        — Arthur Pembroke
+        <span>Royal Geographic Society — expedição ao Egito, 1895</span>
+    </div>
+
+    <div class="aviso-final">
+        Essas foram as palavras escritas por <strong>Arthur Pembroke</strong>, um conhecido navegador que conquistou vários mares, mas teve um misterioso final.<br>
+        Suas anotações foram encontradas no <strong>Canadá</strong>, em 1903, dentro de uma caixa lacrada que continha apenas este caderno e uma fotografia do trono.<br>
+        Seu corpo nunca foi encontrado.
+    </div>
+
+    
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px; flex-wrap: wrap; gap: 12px;">
+        <a href="post4.html" class="link-voltar">← voltar ao blog</a>
+        <span style="font-family: 'Courier New', monospace; font-size: 10px; color: #3a3428;">Arquivo digitalizado — fonte original: Biblioteca de Alexandria</span>
+    </div>
+
+</div>
+
+</body>
+</html>
